@@ -1,0 +1,17 @@
+[package]
+name = "tinykv_lab"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.85"
+description = "A teaching TCP key-value cache with expiry and bounded resources"
+license = "MIT"
+
+[dependencies]
+ctrlc = { version = "=3.5.2", features = ["termination"] }
+
+[lints.rust]
+unsafe_code = "forbid"
+
+[lints.clippy]
+unwrap_used = "warn"
+expect_used = "warn"
